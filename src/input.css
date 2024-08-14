@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* utilitis layer */
+@layer utilities{
+    .fonst{
+        font-family: "Lato", sans-serif;
+    }
+}
+/* component layer */
+@layer components{
+    
+}
