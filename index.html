@@ -1,129 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Food</title>
     <!-- lato fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awsome -->
-    <script src="https://kit.fontawesome.com/3c3766bed1.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3c3766bed1.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- tailwind cannected -->
-     <link rel="stylesheet" href="output/output.css">
-</head>
-<body class="fonst">
+    <link rel="stylesheet" href="output/output.css" />
+  </head>
+  <body class="fonst">
     <!-- header desing start -->
-    <header class="w-[80%] h-auto mx-auto">
-        <!-- desktop nav start -->
-         <nav class="w-full h-[100px] mt-8 rounded-[50px] bg-[#F85559] flex justify-between items-center px-11 max-sm:hidden">
-            <!-- menu start -->
-             <div class="flex justify-between items-center text-white gap-x-3 list-none">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">All Fruits</a></li>
-             </div>
-            <!-- menu end -->
-             <!-- logo start -->
-              <div class="flex items-center text-white gap-x-2">
-                <img src="./fruit-brust/images/logo.png" alt="">
-                <h1 class="text-2xl">Sakib Fruits Burst</h1>
-              </div>
-             <!-- logo end -->
-              <!-- search start -->
-               <input type="search" class="w-[250px] px-3 rounded-lg h-[50px] outline-none border-none" name="" id="" placeholder="Search here">
-              <!-- search end -->
-         </nav>
-        <!-- desktop nav end -->
-         <!-- mobile start -->
-          <div class="flex justify-between items-center mt-8 md:hidden">
-             <!-- logo start -->
-              <div class="flex items-center text-black gap-x-2">
-                <img src="./fruit-brust/images/logo.png" alt="">
-                <h1 class="text-2xl">Sakib Fruits Burst</h1>
-              </div>
-             <!-- logo end -->
-            <!-- mobile menu start -->
-            <label class="btn btn-circle swap swap-rotate">
-              <!-- this hidden checkbox controls the state -->
-              <input type="checkbox" />
-            
-              <!-- hamburger icon -->
-              <svg
-                class="swap-off fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 512 512">
-                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-              </svg>
-            
-              <!-- close icon -->
-              <svg
-                class="swap-on fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 512 512">
-                <polygon
-                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-              </svg>
-            </label>
-            <!-- mobile menu end -->
-          </div>
-         <!-- mobile end -->
+    <header class="w-[80%] h-auto mx-auto ">
+      <!-- desktop nav start -->
+      <nav
+        class="w-full h-[100px] mt-8 rounded-[50px] bg-[#F85559] flex justify-between items-center px-11 max-sm:hidden"
+      >
+        <!-- menu start -->
+        <div
+          class="flex justify-between items-center text-white gap-x-3 list-none"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+        </div>
+        <!-- menu end -->
+        <!-- logo start -->
+        <div class="flex items-center text-white gap-x-2">
+          <img src="./fruit-brust/images/logo.png" alt="" />
+          <h1 class="text-2xl">Sakib Fruits Burst</h1>
+        </div>
+        <!-- logo end -->
+        <!-- search start -->
+        <input
+          type="search"
+          class="w-[250px] px-3 rounded-lg h-[50px] outline-none border-none"
+          name=""
+          id=""
+          placeholder="Search here"
+        />
+        <!-- search end -->
+      </nav>
+      <!-- desktop nav end -->
+      <!-- mobile start -->
+      <div class="flex justify-between items-center mt-8 md:hidden">
+        <!-- logo start -->
+        <div class="flex items-center text-black gap-x-2">
+          <img src="./fruit-brust/images/logo.png" alt="" />
+          <h1 class="text-2xl">Sakib Fruits Burst</h1>
+        </div>
+        <!-- logo end -->
+        <!-- mobile menu start -->
+        <label class="btn btn-circle swap swap-rotate">
+          <!-- this hidden checkbox controls the state -->
+          <input type="checkbox" />
+
+          <!-- hamburger icon -->
+          <svg
+            class="swap-off fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+
+          <!-- close icon -->
+          <svg
+            class="swap-on fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 512 512"
+          >
+            <polygon
+              points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+            />
+          </svg>
+        </label>
+        <!-- mobile menu end -->
+      </div>
+      <!-- mobile end -->
     </header>
     <!-- header desing end -->
-     <!-- main start -->
-      <main>
-        <!-- banner start -->
-         <section class="w-[80%] mx-auto mt-8">
-          <!-- casual start -->
-          <div class="carousel w-full aspect-auto">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img
-                src="./fruit-brust/images/banner1.png"
-                class="w-full" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <img
-                src="./fruit-brust/images/banner2.png"
-                class="w-full" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-              <img
-                src="./fruit-brust/images/banner3.png"
-                class="w-full" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-              <img
-                src="./fruit-brust/images/banner4.png"
-                class="w-full" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+    <!-- main start -->
+    <main>
+      <!-- banner start -->
+      <section class="w-[80%] mx-auto relative mt-8">
+        <!-- casual start -->
+        <div class="carousel w-full aspect-auto">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./fruit-brust/images/banner1.png" class="w-full " />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <!-- casual end -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./fruit-brust/images/banner2.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./fruit-brust/images/banner3.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./fruit-brust/images/banner4.png" class="w-full" />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- casual end -->
+        <!-- banner text start -->
+         <div class="w-[70%] mx-auto flex flex-col text-white justify-center items-center gap-y-3 h-auto absolute top-[20px] right-[160px] aspect-video">
+          <h1 class="text-[50px] text-center">Exotic tastes at your <br> doorstep</h1>
+          <p class="text-gray-100">We supply highly quality organic products</p>
+          <button class="btn btn-error text-white">Shop Now</button>
+         </div>
+        <!-- banner text end -->
+        <!-- short items start -->
+        <div class="w-[80%] h-[180px] drop-shadow-lg mx-auto bg-white absolute right-[100px] bottom-[-103px] max-sm:hidden rounded-sm">
+          <div class="w-full flex justify-between items-center p-5">
+            <!-- start 1 -->
+             <div class="flex flex-col items-center justify-center">
+              <img src="./fruit-brust/images/fruit1.png" alt="">
+              <p>Strawberry</p>
+             </div>
+            <!-- end 1 -->
+              <!-- start 1 -->
+              <div class="flex flex-col items-center justify-center">
+                <img src="./fruit-brust/images/fruit2.png" alt="">
+                <p>Orange</p>
+               </div>
+              <!-- end 1 -->
 
-         </section>
-        <!-- banner end -->
-      </main>
-     <!-- main end -->
-</body>
+               <!-- start 1 -->
+             <div class="flex flex-col items-center justify-center">
+              <img src="./fruit-brust/images/fruit3.png" alt="">
+              <p>Mango</p>
+             </div>
+            <!-- end 1 -->
+
+             <!-- start 1 -->
+             <div class="flex flex-col items-center justify-center">
+              <img src="./fruit-brust/images/fruit4.png" alt="">
+              <p>Lichy</p>
+             </div>
+            <!-- end 1 -->
+
+             <!-- start 1 -->
+             <div class="flex flex-col items-center justify-center">
+              <img src="./fruit-brust/images/fruit5.png" alt="">
+              <p>Strawberry</p>
+             </div>
+            <!-- end 1 -->
+          </div>
+        </div>
+        <!-- short items end -->
+      </section>
+      <!-- banner end -->
+    </main>
+    <!-- main end -->
+  </body>
 </html>
