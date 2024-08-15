@@ -142,10 +142,12 @@
         </div>
         <!-- casual end -->
         <!-- banner text start -->
-         <div class="w-[70%] mx-auto flex flex-col text-white justify-center items-center gap-y-3 h-auto absolute top-[20px] right-[160px] aspect-video">
-          <h1 class="text-[50px] text-center">Exotic tastes at your <br> doorstep</h1>
+         <div class="w-[70%] mx-auto h-auto absolute top-[20px] right-[160px] aspect-video max-sm:hidden">
+          <div class="flex flex-col gap-y-3 text-white justify-center items-center backdrop-blur">
+            <h1 class="text-[50px] text-center">Exotic tastes at your <br> doorstep</h1>
           <p class="text-gray-100">We supply highly quality organic products</p>
           <button class="btn btn-error text-white">Shop Now</button>
+          </div>
          </div>
         <!-- banner text end -->
         <!-- short items start -->
@@ -189,6 +191,45 @@
         <!-- short items end -->
       </section>
       <!-- banner end -->
+
+      <!-- day deal start -->
+       <section class="w-[80%] mt-[150px] max-sm:mt-[20px] h-auto mx-auto flex justify-between items-center max-sm:flex-col">
+        <!-- text -->
+         <div class="w-[40%] max-sm:w-full">
+          <h1 class="text-2xl font-extrabold">Deal of the day</h1>
+          <p class="text-gray-600">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+         </div>
+        <!-- count Down start-->
+       
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:${counter};"></span>
+            </span>
+            sec
+          </div>
+        </div>
+        <!-- count Down end -->
+       </section>
+      <!-- day deal end -->
     </main>
     <!-- main end -->
   </body>
